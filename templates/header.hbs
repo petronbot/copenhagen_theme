@@ -2,9 +2,7 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-    {{/link}}
+    <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
   </div>
   <div class="nav-wrapper">
     <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
@@ -34,6 +32,11 @@
           {{link "sign_out" role="menuitem"}}
         </div>
       </div>
+    {{else}}
+    <nav class="user-nav" id="user-nav">
+      <a href="https://help.abc.net.au/hc/en-us/articles/360001150496-What-are-the-contact-details-for-the-ABC-">Contact Us</a>
+      <a href="https://abc.net.au/">ABC Home</a>
+    </nav>
     {{/if}}
   </div>
 </header>
