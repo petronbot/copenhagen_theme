@@ -1,4 +1,17 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: 'ABCSans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.eot');
+  src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.eot?#iefix') format('embedded-opentype'),
+       url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.woff2') format('woff2'),
+       url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.woff') format('woff'),
+       url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.ttf') format('truetype'),
+       url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.svg#abcsansregular') format('svg');
+}
+
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -8,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'ABCSans';
 }
 
 main {
