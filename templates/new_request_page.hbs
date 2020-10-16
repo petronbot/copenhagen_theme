@@ -1,18 +1,7 @@
 <div class="container-divider"></div>
 <div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    <div class="search-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon">
-        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-      </svg>
-      {{search submit=false}}
-    </div>
-  </nav>
-
   <h1>
-    {{t 'submit_a_request'}}
+    Ask us your COVID-19 question
     <span class="follow-up-hint">
       {{follow_up}}
     </span>
@@ -20,5 +9,6 @@
 
   <div id="main-content" class="form">
     {{request_form wysiwyg=true}}
+    <p>For details about how your personal information will be handled, please see the ABC Privacy Collection Statement at <a href="https://help.abc.net.au/hc/en-us/articles/360001511015-Privacy-Collection-Statement-">https://help.abc.net.au/hc/en-us/articles/360001511015-Privacy-Collection-Statement-</a>.</p>
   </div>
 </div>
